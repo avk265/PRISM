@@ -1,0 +1,129 @@
+{
+  "schema": 1,
+  "canonical_paper": "paper/prism_spark_sql.pdf",
+  "benchmark": "tpch",
+  "scale_factor": 10,
+  "workers": 4,
+  "executor_cores": 2,
+  "executor_memory_mb": 1536,
+  "driver_memory": "2g",
+  "concurrent_driver_memory": "1g",
+  "concurrent_grant_wait_s": 15,
+  "aqe": true,
+  "calibration": "v2",
+  "sla_factor": 1.15,
+  "seed": 0,
+  "official_policies": [
+    "fixed_1e",
+    "fixed_2e",
+    "fixed_3e",
+    "fixed_4e",
+    "spark_dra",
+    "prism_pluggable_enhanced",
+    "prism_random_forest_two_stage",
+    "prism_random_forest_lm_two_stage",
+    "prism_xgboost_two_stage",
+    "prism_xgboost_lm_two_stage",
+    "prism_lightgbm_two_stage",
+    "prism_lightgbm_lm_two_stage",
+    "prism_ridge_two_stage",
+    "prism_ridge_lm_two_stage",
+    "prism_svr_two_stage",
+    "prism_svr_lm_two_stage",
+    "prism_mlp_two_stage",
+    "prism_mlp_lm_two_stage"
+  ],
+  "live_policies": [
+    "fixed_1e",
+    "fixed_2e",
+    "fixed_3e",
+    "fixed_4e",
+    "spark_dra",
+    "heuristic",
+    "lyu_live",
+    "rios_live",
+    "ernest_live",
+    "cherrypick_live",
+    "prism_pluggable_enhanced",
+    "prism_random_forest_two_stage",
+    "prism_random_forest_lm_two_stage",
+    "prism_xgboost_two_stage",
+    "prism_xgboost_lm_two_stage",
+    "prism_lightgbm_two_stage",
+    "prism_lightgbm_lm_two_stage",
+    "prism_ridge_two_stage",
+    "prism_ridge_lm_two_stage",
+    "prism_svr_two_stage",
+    "prism_svr_lm_two_stage",
+    "prism_mlp_two_stage",
+    "prism_mlp_lm_two_stage"
+  ],
+  "concurrent_policies": [
+    "static_1",
+    "static_2",
+    "static_3",
+    "static_4",
+    "spark_dra",
+    "heuristic",
+    "lyu_live",
+    "rios_live",
+    "prism_base",
+    "ernest_profiled",
+    "cherrypick_profiled",
+    "prism_random_forest_two_stage_cap",
+    "prism_random_forest_lm_two_stage_cap",
+    "prism_xgboost_two_stage_cap",
+    "prism_xgboost_lm_two_stage_cap",
+    "prism_lightgbm_two_stage_cap",
+    "prism_lightgbm_lm_two_stage_cap",
+    "prism_ridge_two_stage_cap",
+    "prism_ridge_lm_two_stage_cap",
+    "prism_svr_two_stage_cap",
+    "prism_svr_lm_two_stage_cap",
+    "prism_mlp_two_stage_cap",
+    "prism_mlp_lm_two_stage_cap"
+  ],
+  "official_reps": 3,
+  "live_reps": 1,
+  "loads": [
+    0,
+    4,
+    8
+  ],
+  "tenants": [
+    1,
+    2,
+    3
+  ],
+  "concurrent_reps": 1,
+  "panel_by_cohort": {
+    "official": [
+      "q6",
+      "q8"
+    ],
+    "variants": [
+      "v09_2",
+      "v19_2"
+    ],
+    "variants2": [
+      "w13_2",
+      "w21_2"
+    ],
+    "newfamilies": [
+      "f008",
+      "f039"
+    ]
+  },
+  "models": "prism/model/expanded_training",
+  "base_models": "prism/model/baseline_models",
+  "training_sweeps": [
+    "results/measurements/training/initial",
+    "results/measurements/training/extension"
+  ],
+  "cohorts": {
+    "official": "tpch-queries",
+    "variants": "tpch-test-qgen-variants",
+    "variants2": "tpch-test-qgen-variants2",
+    "newfamilies": "tpch-test-newfamilies"
+  }
+}

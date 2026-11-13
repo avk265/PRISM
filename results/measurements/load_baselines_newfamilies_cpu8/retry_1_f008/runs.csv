@@ -1,0 +1,2 @@
+benchmark,dataset,query,strategy,rep,contention_k,seed,requested_executors,requested_cores,requested_memory_mb,dynamic,two_stage,sql_conf,shared_with,status,error,executors_at_start,latency_s,rows,checksum,wall_s,alloc_core_s,alloc_mem_gb_s,executors_seen,executor_cpu_s,executor_task_s,shuffle_write_bytes,checkpoint_shuffle_bytes,checkpoint_partitions
+tpch,tpch-10gb-parquet,f008,fixed_2e,1,8,0,2,2,1536,False,False,{},,SUCCESS,,2,98.86506867408752,7,49c1648f39810407,98.86506867408752,395.4602746963501,296.5952060222626,2,329.467438542,351.284,1524614625,504480401.0,15

@@ -1,0 +1,82 @@
+{
+  "sql_sha256": "06312eefaafa97fcf042cc2ff8c4e951c0f8351cb4131e592529640deec099f9",
+  "query": "f039",
+  "strategy": "ernest_live",
+  "probes": {
+    "1": {
+      "status": "SUCCESS",
+      "error": "",
+      "executors_at_start": 1,
+      "latency_s": 43.94300603866577,
+      "rows": 15,
+      "checksum": "bab652dd80ace691",
+      "wall_s": 43.94300603866577,
+      "alloc_core_s": 87.88601207733154,
+      "alloc_mem_gb_s": 65.91450905799866,
+      "executors_seen": 1,
+      "executor_cpu_s": 72.785739137,
+      "executor_task_s": 77.813,
+      "shuffle_write_bytes": 285492988,
+      "checkpoint_shuffle_bytes": 209616877.0,
+      "checkpoint_partitions": 5
+    },
+    "4": {
+      "status": "SUCCESS",
+      "error": "",
+      "executors_at_start": 4,
+      "latency_s": 22.115950107574463,
+      "rows": 15,
+      "checksum": "bab652dd80ace691",
+      "wall_s": 22.115950107574463,
+      "alloc_core_s": 176.9276008605957,
+      "alloc_mem_gb_s": 132.69570064544678,
+      "executors_seen": 4,
+      "executor_cpu_s": 85.11776331,
+      "executor_task_s": 143.772,
+      "shuffle_write_bytes": 285546813,
+      "checkpoint_shuffle_bytes": 285530143.0,
+      "checkpoint_partitions": 9
+    }
+  },
+  "attempts": [
+    {
+      "executors": 1,
+      "status": "SUCCESS",
+      "error": "",
+      "executors_at_start": 1,
+      "latency_s": 43.94300603866577,
+      "rows": 15,
+      "checksum": "bab652dd80ace691",
+      "wall_s": 43.94300603866577,
+      "alloc_core_s": 87.88601207733154,
+      "alloc_mem_gb_s": 65.91450905799866,
+      "executors_seen": 1,
+      "executor_cpu_s": 72.785739137,
+      "executor_task_s": 77.813,
+      "shuffle_write_bytes": 285492988,
+      "checkpoint_shuffle_bytes": 209616877.0,
+      "checkpoint_partitions": 5
+    },
+    {
+      "executors": 4,
+      "status": "SUCCESS",
+      "error": "",
+      "executors_at_start": 4,
+      "latency_s": 22.115950107574463,
+      "rows": 15,
+      "checksum": "bab652dd80ace691",
+      "wall_s": 22.115950107574463,
+      "alloc_core_s": 176.9276008605957,
+      "alloc_mem_gb_s": 132.69570064544678,
+      "executors_seen": 4,
+      "executor_cpu_s": 85.11776331,
+      "executor_task_s": 143.772,
+      "shuffle_write_bytes": 285546813,
+      "checkpoint_shuffle_bytes": 285530143.0,
+      "checkpoint_partitions": 9
+    }
+  ],
+  "selected_executors": 3,
+  "profiling_core_s": 264.81361293792725,
+  "cost_basis": "successful algorithm probes; infrastructure retry attempts preserved separately"
+}

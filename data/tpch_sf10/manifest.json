@@ -1,0 +1,470 @@
+{
+  "benchmark": "tpch",
+  "scale_factor": 10,
+  "format": "Parquet",
+  "tables": 8,
+  "total_bytes": 3447837229,
+  "files": [
+    {
+      "path": "customer/part-00000-68d01758-82b8-4234-9179-bdcf9be7fa62-c000.snappy.parquet",
+      "sha256": "95835b72dd9b6b4f3d48e538233ec9bbbae44596ac4090ba207ec64390014555",
+      "bytes": 42142460
+    },
+    {
+      "path": "customer/part-00001-68d01758-82b8-4234-9179-bdcf9be7fa62-c000.snappy.parquet",
+      "sha256": "b34e27199d6e13d0c4c64736c71fd78e3315a864249d0e9934ffd2134b071950",
+      "bytes": 42044378
+    },
+    {
+      "path": "customer/part-00002-68d01758-82b8-4234-9179-bdcf9be7fa62-c000.snappy.parquet",
+      "sha256": "095b98fa166a650e636d1483f102531b5174b56e05fc1dc19d2b635c8a402351",
+      "bytes": 39689538
+    },
+    {
+      "path": "lineitem/part-00000-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "1aba67284e97b6b857a6cd7b170a1287e862116529017a7d46fe4f175c5231ee",
+      "bytes": 39458816
+    },
+    {
+      "path": "lineitem/part-00001-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "01213817561537db4126b9bc4ffae483f36ac48ecbc22ade1fc4de8fb47d5cdf",
+      "bytes": 39137843
+    },
+    {
+      "path": "lineitem/part-00002-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "baf28274429ba57536f06379db9fb1cac5d4c21701637a967ada64776b531ff8",
+      "bytes": 39136377
+    },
+    {
+      "path": "lineitem/part-00003-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "86b85b8500335fa678c6e2539b9e98e537e77e19c68f6ee6c626ad214630491e",
+      "bytes": 39137671
+    },
+    {
+      "path": "lineitem/part-00004-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "5da389fe1d455dfd0e17fb541af6c3b11279996008752544307b29c7c4b1a98b",
+      "bytes": 39144351
+    },
+    {
+      "path": "lineitem/part-00005-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "485d27cd8f3c130b92749919b298ca4bfe035649d142b76854e5ca8535e92783",
+      "bytes": 39139519
+    },
+    {
+      "path": "lineitem/part-00006-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "7e152a6e96d1d538151330e6f1089c83187ab4e204cdd0707a2e57b5b10d95e9",
+      "bytes": 39145472
+    },
+    {
+      "path": "lineitem/part-00007-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "99228d7a18ed0df7e9a1d440494cd63cf52c97557dbd4dbe5b0a106be4796efa",
+      "bytes": 39130205
+    },
+    {
+      "path": "lineitem/part-00008-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "39fd9af3871b7746123a810bb655f616b081564abdea23b9a57c924777fbacf1",
+      "bytes": 39132884
+    },
+    {
+      "path": "lineitem/part-00009-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "5ac173ebc54a55fec70d2b90e3581410f0bf3151a0e491973b4ea6be7a83cc41",
+      "bytes": 38995418
+    },
+    {
+      "path": "lineitem/part-00010-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "5d8eba357bd0dc53bf27b778c563c2181ccdb5f4389bc3a00ece3d3d48b5c4fb",
+      "bytes": 38832543
+    },
+    {
+      "path": "lineitem/part-00011-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "536e4f37f0574d3a9c3b98cf2e7f06b117ed842a4b8ce93f2ea78ef522cd17b9",
+      "bytes": 38835033
+    },
+    {
+      "path": "lineitem/part-00012-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "c1954da2d2749662e054ab8faa458880873d567f78ed46ef85eeb1c0265591d8",
+      "bytes": 38836585
+    },
+    {
+      "path": "lineitem/part-00013-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "29f1ba02774d8fb5f02d9809fd7a6bf96e046289c77c1471f51b9fb7f012c7a0",
+      "bytes": 38841030
+    },
+    {
+      "path": "lineitem/part-00014-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "bdc7ea929fa7db8a6b8009107f5ce28c4f9758791a32a9489c900b3fbf55773f",
+      "bytes": 38841940
+    },
+    {
+      "path": "lineitem/part-00015-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "47a7c55be56737002fa1bb0bfb872dcaafde82b993debdc744945d0657819e04",
+      "bytes": 38833320
+    },
+    {
+      "path": "lineitem/part-00016-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "8299f4a3f4ef14c50eed75bbba39417e14420ca9bda34a50df8f05cbcba205a0",
+      "bytes": 38840726
+    },
+    {
+      "path": "lineitem/part-00017-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "60708a6cb933339b88542fefdd454c6070d89b4f59fc5b6f34f3796f1f064a57",
+      "bytes": 38850352
+    },
+    {
+      "path": "lineitem/part-00018-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "bda363b6d691aefdf213b9407af000139878f310ce7480f0fac093aa5a8f12cc",
+      "bytes": 38843228
+    },
+    {
+      "path": "lineitem/part-00019-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "b2be0aeafb823a3994eee10bbe9bab2ba2d017147701b0445d89be3789eb7868",
+      "bytes": 38840229
+    },
+    {
+      "path": "lineitem/part-00020-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "3be0a03672f1d305adc04ee111c5640cc460c946afabc5ed1827bc973b6d9b8b",
+      "bytes": 38833389
+    },
+    {
+      "path": "lineitem/part-00021-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "e7701138312499856501161642cb3453680046e47ec06e5a92316a5c05140ea6",
+      "bytes": 38835319
+    },
+    {
+      "path": "lineitem/part-00022-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "f04cf2c826b04ce952601be98a5a539548b0bb82686e5f754074d8fdac5e6678",
+      "bytes": 38833422
+    },
+    {
+      "path": "lineitem/part-00023-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "bdc12dbaeb7cacc7efbfa3514d2c991de8532d15d0a1efb3ed3808e27bb5b4fc",
+      "bytes": 38842726
+    },
+    {
+      "path": "lineitem/part-00024-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "14d3e0e99bc0f4ae776c91ee3c64e4fb3d7d33e2fa9ad35f32069ac7f7e49f39",
+      "bytes": 38845403
+    },
+    {
+      "path": "lineitem/part-00025-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "9dff2519e197bb9b7fcf7e5a9921225247af19a9a0cb2fe63d523f4efa4bd40d",
+      "bytes": 38836443
+    },
+    {
+      "path": "lineitem/part-00026-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "2b58777e144119096cca24f4e1448de9e76c4eae3ba9f861de9964198cfbb4ac",
+      "bytes": 38837742
+    },
+    {
+      "path": "lineitem/part-00027-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "c98c9dc123cbed877b72e1b99e9986fc712e0d16e09e2729a74d77fea5da9a14",
+      "bytes": 38839111
+    },
+    {
+      "path": "lineitem/part-00028-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "a9df90643cc4cfabd03804adb3933b9293bf359130aece2877a3786f32e9360e",
+      "bytes": 38848289
+    },
+    {
+      "path": "lineitem/part-00029-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "6fea6adeeb5594a9d740a130f786c922cb62f1e34b6c882e13d746e1c94d241b",
+      "bytes": 38837574
+    },
+    {
+      "path": "lineitem/part-00030-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "48dae1ba6f0f5c6a8f2b814ad0e2a4b53e169e0905ebd61e9c941402c53b7747",
+      "bytes": 38833825
+    },
+    {
+      "path": "lineitem/part-00031-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "f771f50ae330cb61f8585c35502580a9fdd67b4cf7bd174cf643922a3a481b73",
+      "bytes": 38839290
+    },
+    {
+      "path": "lineitem/part-00032-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "e0babbdd78afa29fb98a496b867c2942c93244c6eeffe0815e3b54f789190931",
+      "bytes": 38848179
+    },
+    {
+      "path": "lineitem/part-00033-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "4c1da23ca01cfd9d752bac533a2d308f38b3526512b56bcf81c3c43beb5abdbf",
+      "bytes": 38842933
+    },
+    {
+      "path": "lineitem/part-00034-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "04b45737ab20033f16f83abb477ed184a47d1914d8c10d1f1604d51c4c066441",
+      "bytes": 38834293
+    },
+    {
+      "path": "lineitem/part-00035-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "28a8b8047524ddd2c8591778d5fbf07e66733d54882d9e1b157ccd4a8c4ef557",
+      "bytes": 38836269
+    },
+    {
+      "path": "lineitem/part-00036-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "1ec38cbe58033ef55662b00bffba1568ff885bbb1eaed97842bee38819d0eb09",
+      "bytes": 38843962
+    },
+    {
+      "path": "lineitem/part-00037-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "cf91964fe8e0906959c66d040459af1130534dcea9356bf9286e224c1a70ffee",
+      "bytes": 38839209
+    },
+    {
+      "path": "lineitem/part-00038-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "bacd15491592c701bd14889c1f2296454f0465b5617ea092720e1812325cc174",
+      "bytes": 38846014
+    },
+    {
+      "path": "lineitem/part-00039-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "c1f22d3bd8f5b4bd8204c967da2797dc33bbde883e12b416e8fb2f8993ef98d3",
+      "bytes": 38844967
+    },
+    {
+      "path": "lineitem/part-00040-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "97673145c529d22fc772e153ac93fa9097dcac7d4137d6cfa3951721e849e380",
+      "bytes": 38838698
+    },
+    {
+      "path": "lineitem/part-00041-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "b490c7cbb8487e699937cd2a9b9f3cbac429c675500507ddb74647153c8f2e1e",
+      "bytes": 38840110
+    },
+    {
+      "path": "lineitem/part-00042-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "1c4767ef4c711694fe89a71a2ff2ee230f6568b36d1f3ba5e8957f17513e8d87",
+      "bytes": 38834523
+    },
+    {
+      "path": "lineitem/part-00043-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "a473bbfd81c1d21308f0f84bd93d2f8957db8b35cb4904842e021eb515b05ce0",
+      "bytes": 38844603
+    },
+    {
+      "path": "lineitem/part-00044-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "840f433955f508ecdcf12b0f0f7a8d913223bd8a87a9ff5dc38d7880179c316d",
+      "bytes": 38848083
+    },
+    {
+      "path": "lineitem/part-00045-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "d18759e0c3ec3b8ff403138f0259c389b3a3af908da1ab77ecfc919d86c53c12",
+      "bytes": 38846067
+    },
+    {
+      "path": "lineitem/part-00046-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "0aa3b7c5c48e488ed8c892e470c68d7a133e69c7e089e5dba3eae84b83199022",
+      "bytes": 38842337
+    },
+    {
+      "path": "lineitem/part-00047-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "70e8ab93538652ad73c955a221de5de1c2bf7d53d5478e0ed3fe52435644f0d4",
+      "bytes": 38837688
+    },
+    {
+      "path": "lineitem/part-00048-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "86539ba3674a167c4586cd471cf48d5f9175ba04272c31e4e1c718e4892c63b6",
+      "bytes": 38841053
+    },
+    {
+      "path": "lineitem/part-00049-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "10ed92e98c534f51600655322c82a8ac1db2100189006ae9db55ab1ab3b95fc3",
+      "bytes": 38844987
+    },
+    {
+      "path": "lineitem/part-00050-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "52b47a0f470bd7cde0b0b056354f649e8299fdf65cf762c8d78e072a46186f50",
+      "bytes": 38845390
+    },
+    {
+      "path": "lineitem/part-00051-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "bee548b5e4df21e4b4b44f1cc4b911cc18190ebab45187d164baacc948024e96",
+      "bytes": 38842476
+    },
+    {
+      "path": "lineitem/part-00052-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "ab9a0571149de552c5e4616dea85b027f955195c2f890909e32af486fa089af4",
+      "bytes": 38845604
+    },
+    {
+      "path": "lineitem/part-00053-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "62e8642302410a5c3bd18ed29d699a7d9d8d5588e2ec551ab2deff959bb9654a",
+      "bytes": 38836161
+    },
+    {
+      "path": "lineitem/part-00054-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "bf2dcc7b848d2d496353449d938e0d1479b907e26b37829ee8671292072d1300",
+      "bytes": 38836989
+    },
+    {
+      "path": "lineitem/part-00055-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "b57bed631825158dcf958f2c31fc740cc380da4def9b0124fd32f3185fffbcf6",
+      "bytes": 38845146
+    },
+    {
+      "path": "lineitem/part-00056-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "cb4710755fbc79efdef82eb551145a485acea807c5254cdec99e0fd8eaa5f76e",
+      "bytes": 38835646
+    },
+    {
+      "path": "lineitem/part-00057-f41ee15b-0ef5-4a14-8493-5895de7a5d54-c000.snappy.parquet",
+      "sha256": "7a275dad283c806b37593b89c4ab9a6c5718cc3a8fa8cd202d76df0889b1f686",
+      "bytes": 19202011
+    },
+    {
+      "path": "nation/part-00000-024b6413-dd45-4ad9-b9f0-327642a25d8c-c000.snappy.parquet",
+      "sha256": "a54a1ac4ddd99541e76aed3e655f648bf9c5d47797fc1c68cf97fa67cdbb2f1d",
+      "bytes": 3099
+    },
+    {
+      "path": "orders/part-00000-0eb9c9cb-83b6-4c17-82e6-27258b8a76ae-c000.snappy.parquet",
+      "sha256": "f1cf96b355cef42ad707f3f7f49bf0933bac7e156354ef6996c2ee5f7a55d68d",
+      "bytes": 44919401
+    },
+    {
+      "path": "orders/part-00001-0eb9c9cb-83b6-4c17-82e6-27258b8a76ae-c000.snappy.parquet",
+      "sha256": "45abaecfdaf4681978bf92e5f8ad95b4320e4f6216eb6935ef13971d49d967b8",
+      "bytes": 44834103
+    },
+    {
+      "path": "orders/part-00002-0eb9c9cb-83b6-4c17-82e6-27258b8a76ae-c000.snappy.parquet",
+      "sha256": "587af6788452ff7f2a48114892faaa44d11256a87aca8f3e5291b6bc579731d3",
+      "bytes": 44494978
+    },
+    {
+      "path": "orders/part-00003-0eb9c9cb-83b6-4c17-82e6-27258b8a76ae-c000.snappy.parquet",
+      "sha256": "19fded00c2eec44acfacb09e1791a486dd46f63db1defce47e24ca66bbebd054",
+      "bytes": 44444014
+    },
+    {
+      "path": "orders/part-00004-0eb9c9cb-83b6-4c17-82e6-27258b8a76ae-c000.snappy.parquet",
+      "sha256": "fa3aa2d808acc6a7366427da0f7851dd9a998e71cdd5a2640a46a7597247878f",
+      "bytes": 44440093
+    },
+    {
+      "path": "orders/part-00005-0eb9c9cb-83b6-4c17-82e6-27258b8a76ae-c000.snappy.parquet",
+      "sha256": "578817dc405225e271c7a7dca9bfe4ba1ffad2554125702ae08f07f77ed94924",
+      "bytes": 44450285
+    },
+    {
+      "path": "orders/part-00006-0eb9c9cb-83b6-4c17-82e6-27258b8a76ae-c000.snappy.parquet",
+      "sha256": "7cbfa117e40da64c7d3a9b9de45ac9f42e4d7783b85d2accf10f834d1869de14",
+      "bytes": 44439787
+    },
+    {
+      "path": "orders/part-00007-0eb9c9cb-83b6-4c17-82e6-27258b8a76ae-c000.snappy.parquet",
+      "sha256": "786be5a2c675d72ad13e32b924febace511161cdc8d69448c1a0b92b102523dd",
+      "bytes": 44441452
+    },
+    {
+      "path": "orders/part-00008-0eb9c9cb-83b6-4c17-82e6-27258b8a76ae-c000.snappy.parquet",
+      "sha256": "0b932194394c979f07593cd67b692c181cd1fd1c4bce188e17db70bd5b2402eb",
+      "bytes": 44449781
+    },
+    {
+      "path": "orders/part-00009-0eb9c9cb-83b6-4c17-82e6-27258b8a76ae-c000.snappy.parquet",
+      "sha256": "0a51a22d1a32373dc420397886038289244753a6c4012461ea11869d5662523b",
+      "bytes": 44441167
+    },
+    {
+      "path": "orders/part-00010-0eb9c9cb-83b6-4c17-82e6-27258b8a76ae-c000.snappy.parquet",
+      "sha256": "0eca4c36ab64f3f15a4e40d5ad1cf4255dc397e317e5a1058cc5ab52d586d373",
+      "bytes": 44438533
+    },
+    {
+      "path": "orders/part-00011-0eb9c9cb-83b6-4c17-82e6-27258b8a76ae-c000.snappy.parquet",
+      "sha256": "b152cc10750301408ba2ec44fc142b687f28061168a70cdeffbd025dcfd20cb3",
+      "bytes": 44445652
+    },
+    {
+      "path": "orders/part-00012-0eb9c9cb-83b6-4c17-82e6-27258b8a76ae-c000.snappy.parquet",
+      "sha256": "da8d2b73253c8c1ff7f341d431c83656b2658ec1593984b54bc71e53490b1fda",
+      "bytes": 40921585
+    },
+    {
+      "path": "part/part-00000-c3a3442a-db5a-40ed-8f6a-c9b6cf14906b-c000.snappy.parquet",
+      "sha256": "04451ef766562a95cf8f710e85ff2fc6ea1113170acf767ed44a886513a5cb2c",
+      "bytes": 21421310
+    },
+    {
+      "path": "part/part-00001-c3a3442a-db5a-40ed-8f6a-c9b6cf14906b-c000.snappy.parquet",
+      "sha256": "aa67f007d2275beb3a60a00cfa3e28a94ecb9f4c5264c7c1689fc0c6a8070cae",
+      "bytes": 21308865
+    },
+    {
+      "path": "part/part-00002-c3a3442a-db5a-40ed-8f6a-c9b6cf14906b-c000.snappy.parquet",
+      "sha256": "70038dcc41b613212e3b735c6cd23cb18388d38549ff565392a62015b4ef8843",
+      "bytes": 20147190
+    },
+    {
+      "path": "partsupp/part-00000-00cd31e9-94d4-4943-89f3-b4c96aca0611-c000.snappy.parquet",
+      "sha256": "97aac758626404e3234f4c3da0ff039397b63fc1ab3983ff7764b4e1b7a3e095",
+      "bytes": 49828125
+    },
+    {
+      "path": "partsupp/part-00001-00cd31e9-94d4-4943-89f3-b4c96aca0611-c000.snappy.parquet",
+      "sha256": "4a43b174ceb85237f8a66a20352077fbeca79660c4c9b1468475d8ed03e63789",
+      "bytes": 49670322
+    },
+    {
+      "path": "partsupp/part-00002-00cd31e9-94d4-4943-89f3-b4c96aca0611-c000.snappy.parquet",
+      "sha256": "18afc049a99e048b5b80d87c62ebbca5cd7274c10bfbe63c1b3a6493c8fe067d",
+      "bytes": 49683696
+    },
+    {
+      "path": "partsupp/part-00003-00cd31e9-94d4-4943-89f3-b4c96aca0611-c000.snappy.parquet",
+      "sha256": "ff7e5fde7533bd4a4c475fde8ee64ee0cea48c4806e82e16c12a0ffe6ecbef14",
+      "bytes": 49678049
+    },
+    {
+      "path": "partsupp/part-00004-00cd31e9-94d4-4943-89f3-b4c96aca0611-c000.snappy.parquet",
+      "sha256": "c41c4eb59542c7ef98ee974e6558955568c6bdfc7aa09a1b42b585fc701062ae",
+      "bytes": 49502735
+    },
+    {
+      "path": "partsupp/part-00005-00cd31e9-94d4-4943-89f3-b4c96aca0611-c000.snappy.parquet",
+      "sha256": "454cc09f163c03426419158c28f996a44bf54588bbae7b9af38768e1efa7ffb2",
+      "bytes": 49351871
+    },
+    {
+      "path": "partsupp/part-00006-00cd31e9-94d4-4943-89f3-b4c96aca0611-c000.snappy.parquet",
+      "sha256": "7eb5fd72ed3722ef59c149c47f8a09460722073d17ee958a7d741de7aad887b4",
+      "bytes": 49353059
+    },
+    {
+      "path": "partsupp/part-00007-00cd31e9-94d4-4943-89f3-b4c96aca0611-c000.snappy.parquet",
+      "sha256": "a930d9049381b9b62abb235a290244d7346d210228264c8566dd25cedf5e11ca",
+      "bytes": 49359372
+    },
+    {
+      "path": "partsupp/part-00008-00cd31e9-94d4-4943-89f3-b4c96aca0611-c000.snappy.parquet",
+      "sha256": "cafbb4e59efe1a2184089bc4e4fa5a9367f2ba96b50b2026944d3ddfb48c33fe",
+      "bytes": 45308211
+    },
+    {
+      "path": "region/part-00000-b96e60ca-98d1-4d66-887f-993b84878531-c000.snappy.parquet",
+      "sha256": "e26504c52f6700a5ea91a176f4c0395aa06ce23cc5801078813ee1b4f48cd8ff",
+      "bytes": 1553
+    },
+    {
+      "path": "supplier/part-00000-20591a11-6dd5-4331-9017-1bed0b87e705-c000.snappy.parquet",
+      "sha256": "23de80d840a787a04f98cc0c54cb3cee21c054db317a3aff5ab85b21ceb7e603",
+      "bytes": 3433275
+    },
+    {
+      "path": "supplier/part-00001-20591a11-6dd5-4331-9017-1bed0b87e705-c000.snappy.parquet",
+      "sha256": "87ec479bf3d2b768f12d436ee0f712282c2a09df7eb344a2ea25935d9298d3c9",
+      "bytes": 3422721
+    },
+    {
+      "path": "supplier/part-00002-20591a11-6dd5-4331-9017-1bed0b87e705-c000.snappy.parquet",
+      "sha256": "60372c10d5d7dd2bacf2a477a9d500bf39747a7540cdd8609d91b393d6e716d4",
+      "bytes": 1067096
+    }
+  ],
+  "repository": "avk265/PRISM",
+  "source_generator": "852ad0a (852ad0a5ee31ebefeed884cea4188781dd9613a3)",
+  "source_generator_command": "tools/tpch-kit/dbgen/dbgen -s 10 -vf; scripts/import_tpch.sh --raw-dir tpch_sf10/raw --out tpch_sf10/data",
+  "distribution": "Reference manifest only; bulk input data is not committed",
+  "generator_repository": "https://github.com/gregrahn/tpch-kit.git",
+  "generator_commit": "852ad0a5ee31ebefeed884cea4188781dd9613a3"
+}

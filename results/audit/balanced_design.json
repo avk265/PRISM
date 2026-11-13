@@ -1,0 +1,109 @@
+{
+  "repeated_unloaded": {
+    "policies": 18,
+    "queries": [
+      "q1",
+      "q10",
+      "q11",
+      "q12",
+      "q13",
+      "q14",
+      "q15",
+      "q16",
+      "q17",
+      "q18",
+      "q19",
+      "q2",
+      "q20",
+      "q21",
+      "q22",
+      "q3",
+      "q4",
+      "q5",
+      "q6",
+      "q7",
+      "q8",
+      "q9"
+    ],
+    "repetitions": 3,
+    "runs_per_policy": 66,
+    "total_logical_timed_runs": 1188,
+    "selection": "complete official benchmark, not completion-selected intersection"
+  },
+  "cross_condition_panel": [
+    {
+      "condition": "idle",
+      "policies": 23,
+      "queries": [
+        "f008",
+        "f039",
+        "q6",
+        "q8",
+        "v09_2",
+        "v19_2",
+        "w13_2",
+        "w21_2"
+      ],
+      "timed_runs_per_policy": 8,
+      "repetitions": 1
+    },
+    {
+      "condition": "CPU K=4",
+      "policies": 23,
+      "queries": [
+        "f008",
+        "f039",
+        "q6",
+        "q8",
+        "v09_2",
+        "v19_2",
+        "w13_2",
+        "w21_2"
+      ],
+      "timed_runs_per_policy": 8,
+      "repetitions": 1
+    },
+    {
+      "condition": "CPU K=8",
+      "policies": 23,
+      "queries": [
+        "f008",
+        "f039",
+        "q6",
+        "q8",
+        "v09_2",
+        "v19_2",
+        "w13_2",
+        "w21_2"
+      ],
+      "timed_runs_per_policy": 8,
+      "repetitions": 1
+    }
+  ],
+  "tenant_catalogue": [
+    "f008",
+    "f039",
+    "q6",
+    "q8",
+    "v09_2",
+    "v19_2",
+    "w13_2",
+    "w21_2"
+  ],
+  "tenant_counts": [
+    1,
+    2,
+    3
+  ],
+  "tenant_policies": 23,
+  "tenant_mixes": 69,
+  "aggregation": "within-policy/query means, then equal query weights; load conditions and campaigns remain separate",
+  "not_pooled": "additional six-query contention trial has only one complete two-stage learner; official 22-query CPU lookup analyses are Stage-1 replay; neither supplies an all-learner final-policy live comparison",
+  "broader_idle_sensitivity": {
+    "queries": 97,
+    "policies": 18,
+    "runs_per_policy": 141,
+    "repetitions": "three for official queries, one for generated queries; identical for every policy",
+    "selection": "common completed identities only; kept separate from full official benchmark"
+  }
+}

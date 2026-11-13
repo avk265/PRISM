@@ -1,0 +1,10 @@
+{
+  "queries": 150,
+  "aggregation": "equal query weight across the complete inventory",
+  "sla_change_pp": {
+    "training": 0.6833333333333328,
+    "margin": 8.712121212121207,
+    "stage2": -1.8405797101449268,
+    "cap": -11.347826086956518
+  }
+}

@@ -1,0 +1,761 @@
+[
+  {
+    "test_set": "pooled",
+    "streams": 1,
+    "policy": "static_1",
+    "queries_per_stream": 8,
+    "rows": 8,
+    "sources": {
+      "results/measurements/tenant_sharing/static_1_S1/static_1_S1_r0_t0.csv": "7d45df277b4c94bd937018763f653b0b2ccaada3c3a6596dc49dea79a1015a54"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 1,
+    "policy": "static_2",
+    "queries_per_stream": 8,
+    "rows": 8,
+    "sources": {
+      "results/measurements/tenant_sharing/static_2_S1/static_2_S1_r0_t0.csv": "7dc410930c97886eed9e55f9224faec50b77a36482771d0a79ad3fca012ebe55"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 1,
+    "policy": "static_3",
+    "queries_per_stream": 8,
+    "rows": 8,
+    "sources": {
+      "results/measurements/tenant_sharing/static_3_S1/static_3_S1_r0_t0.csv": "2a1ccdcfc7e0f505e5a6e62c3b69554747da565ca5767eaea03ee4557744aef9"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 1,
+    "policy": "static_4",
+    "queries_per_stream": 8,
+    "rows": 8,
+    "sources": {
+      "results/measurements/tenant_sharing/static_4_S1/static_4_S1_r0_t0.csv": "049fcb02025b132f05823a45b99a075ddd33f602c6c9998172e69a71900ca7f6"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 1,
+    "policy": "spark_dra",
+    "queries_per_stream": 8,
+    "rows": 8,
+    "sources": {
+      "results/measurements/tenant_sharing/spark_dra_S1/spark_dra_S1_r0_t0.csv": "85376ecfc1c9f86e5c336a7f07c9b2ff2b85a79218e42096a673d16554c64cf2"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 1,
+    "policy": "heuristic",
+    "queries_per_stream": 8,
+    "rows": 8,
+    "sources": {
+      "results/measurements/tenant_sharing/heuristic_S1/heuristic_S1_r0_t0.csv": "6175ef239be6c9c567d421c9bed2d57760dbea622d03448e11bc4ed6e6f5a275"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 1,
+    "policy": "lyu_live",
+    "queries_per_stream": 8,
+    "rows": 8,
+    "sources": {
+      "results/measurements/tenant_sharing/lyu_live_S1/lyu_live_S1_r0_t0.csv": "068789233efae666e1c26cd7478add57ea07358f1a4203c5c7768f6e4967637c"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 1,
+    "policy": "rios_live",
+    "queries_per_stream": 8,
+    "rows": 8,
+    "sources": {
+      "results/measurements/tenant_sharing/rios_live_S1/rios_live_S1_r0_t0.csv": "b97f1eb42f32cd88004b2b4499ab25c83f78871a79889fc442d2cc6e547e341b"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 1,
+    "policy": "prism_base",
+    "queries_per_stream": 8,
+    "rows": 8,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_base_S1/prism_base_S1_r0_t0.csv": "f97466b8cc83dc806d1afaad72ebd282a6cbb9dc5d084529038820a89ebb3ef5"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 1,
+    "policy": "ernest_profiled",
+    "queries_per_stream": 8,
+    "rows": 8,
+    "sources": {
+      "results/measurements/tenant_sharing/ernest_profiled_S1/ernest_profiled_S1_r0_t0.csv": "4836bce0350b50f911d5510ab6cc43740a96089d1ff9e207fdf53a0c050756b6"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 1,
+    "policy": "cherrypick_profiled",
+    "queries_per_stream": 8,
+    "rows": 8,
+    "sources": {
+      "results/measurements/tenant_sharing/cherrypick_profiled_S1/cherrypick_profiled_S1_r0_t0.csv": "b226aa49c2e9b3c4f46059898068c6161eae78405a214ca758623461158347ad"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 1,
+    "policy": "prism_random_forest_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 8,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_random_forest_two_stage_cap_S1/prism_random_forest_two_stage_cap_S1_r0_t0.csv": "2952fc54c28464205e1f1bdfaa2a9c12b1f1b0963916cfb9bb9635f14a03a574"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 1,
+    "policy": "prism_random_forest_lm_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 8,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_random_forest_lm_two_stage_cap_S1/prism_random_forest_lm_two_stage_cap_S1_r0_t0.csv": "f533baf3f48a310dd7e34d333eb77866c9d4f9e070fccb794f74ecaaea3015ea"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 1,
+    "policy": "prism_xgboost_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 8,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_xgboost_two_stage_cap_S1/prism_xgboost_two_stage_cap_S1_r0_t0.csv": "99fd9a893cf6385783f4c5302a345beaa1b7550a54703997231c1468fa929fb7"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 1,
+    "policy": "prism_xgboost_lm_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 8,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_xgboost_lm_two_stage_cap_S1/prism_xgboost_lm_two_stage_cap_S1_r0_t0.csv": "424b685573351700a2d99e378a27c494d395feaf1826c26e67fc4512b0f8ce56"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 1,
+    "policy": "prism_lightgbm_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 8,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_lightgbm_two_stage_cap_S1/prism_lightgbm_two_stage_cap_S1_r0_t0.csv": "c5397908d0a00da6b8d0f9b8596fc17e338636faf98f33269775549ee2128ea7"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 1,
+    "policy": "prism_lightgbm_lm_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 8,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_lightgbm_lm_two_stage_cap_S1/prism_lightgbm_lm_two_stage_cap_S1_r0_t0.csv": "075980c404a581e05b1e5f70006e28d1f3ee3da3fef4871c1199301720abac2e"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 1,
+    "policy": "prism_ridge_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 8,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_ridge_two_stage_cap_S1/prism_ridge_two_stage_cap_S1_r0_t0.csv": "8ad6613071800a3b7f1e9fbafe779a62692263ca098e17be3f931c3e90953653"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 1,
+    "policy": "prism_ridge_lm_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 8,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_ridge_lm_two_stage_cap_S1/prism_ridge_lm_two_stage_cap_S1_r0_t0.csv": "4dfb0bc773d19b01bd1bba6e05c32d7b7f6b4aab9366b40bba2d0cd63a22ead3"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 1,
+    "policy": "prism_svr_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 8,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_svr_two_stage_cap_S1/prism_svr_two_stage_cap_S1_r0_t0.csv": "9433b813ef8b425fd252672be2b7b53816439d256cdcd92a8063179c018ab2cc"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 1,
+    "policy": "prism_svr_lm_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 8,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_svr_lm_two_stage_cap_S1/prism_svr_lm_two_stage_cap_S1_r0_t0.csv": "f4a78ceb6236256858427b7715bcffdf5b31c908d5fb5937881bc64a9e93ff98"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 1,
+    "policy": "prism_mlp_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 8,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_mlp_two_stage_cap_S1/prism_mlp_two_stage_cap_S1_r0_t0.csv": "fada9cc9d0bc27d94c5149c770b53323f24ea92f3af88cd38da211ca3203750c"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 1,
+    "policy": "prism_mlp_lm_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 8,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_mlp_lm_two_stage_cap_S1/prism_mlp_lm_two_stage_cap_S1_r0_t0.csv": "951904d0a65ae347e1199b4957389935dfdf2421069dd584061a15b628aba64b"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 2,
+    "policy": "static_1",
+    "queries_per_stream": 8,
+    "rows": 16,
+    "sources": {
+      "results/measurements/tenant_sharing/static_1_S2/static_1_S2_r0_t0.csv": "2dad11cdef3d9165958d933bb8e138984208be49e2d2e79291f6d80e3a516ddc",
+      "results/measurements/tenant_sharing/static_1_S2/static_1_S2_r0_t1.csv": "d0c5170728d36cb89e10af34be45a13bccb7d81b50c0f1a0361b5333fcfa1925"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 2,
+    "policy": "static_2",
+    "queries_per_stream": 8,
+    "rows": 16,
+    "sources": {
+      "results/measurements/tenant_sharing/static_2_S2/static_2_S2_r0_t0.csv": "f0626d6917e38a80bb06e0e7076daa71f57955299ceb19f40b8c4bb9081a65a7",
+      "results/measurements/tenant_sharing/static_2_S2/static_2_S2_r0_t1.csv": "c582e73aaa80583961b6b411077fa745e84b4d936c7ea5a9f2cfdff7083a5a8a"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 2,
+    "policy": "static_3",
+    "queries_per_stream": 8,
+    "rows": 16,
+    "sources": {
+      "results/measurements/tenant_sharing/static_3_S2/static_3_S2_r0_t0.csv": "d17de07132f352f5d32ed8d856d2c9cf76bc69fe202ee2698eea607393ae4da2",
+      "results/measurements/tenant_sharing/static_3_S2/static_3_S2_r0_t1.csv": "d09130539a8f3bc5661b35e63ceb3622117c3aa616b41a187753b369dd9c5cc7"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 2,
+    "policy": "static_4",
+    "queries_per_stream": 8,
+    "rows": 16,
+    "sources": {
+      "results/measurements/tenant_sharing/static_4_S2/static_4_S2_r0_t0.csv": "d8c5c3ebc8b015c8ed0b72ed05ef6311af7994956299f7b77bb4ae3a9ccc2b47",
+      "results/measurements/tenant_sharing/static_4_S2/static_4_S2_r0_t1.csv": "ea57d0964e8c1ad26be35ea7de9e3fab3f7538a926ad973173efee2bda70285d"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 2,
+    "policy": "spark_dra",
+    "queries_per_stream": 8,
+    "rows": 16,
+    "sources": {
+      "results/measurements/tenant_sharing/spark_dra_S2/spark_dra_S2_r0_t0.csv": "d8b9c62204c0ad2c71b25b160fdf62006d501e9eaaab1fde7ec8159d7193d833",
+      "results/measurements/tenant_sharing/spark_dra_S2/spark_dra_S2_r0_t1.csv": "e2ca3c0a89a35177e71e41a83c90f80e01bd7ccf13deac5373226045c1342fe7"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 2,
+    "policy": "heuristic",
+    "queries_per_stream": 8,
+    "rows": 16,
+    "sources": {
+      "results/measurements/tenant_sharing/heuristic_S2/heuristic_S2_r0_t0.csv": "964ecb6743b31054ea6fa0630522a4ac471481b5ecc15f010fe0911bcfe00f9e",
+      "results/measurements/tenant_sharing/heuristic_S2/heuristic_S2_r0_t1.csv": "d6bd2b49af6d07662e2b85412bc2cd2dceeae12e7d4abd697b4dac0f79ec9d24"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 2,
+    "policy": "lyu_live",
+    "queries_per_stream": 8,
+    "rows": 16,
+    "sources": {
+      "results/measurements/tenant_sharing/lyu_live_S2/lyu_live_S2_r0_t0.csv": "ae003343bdb9233fee4617f3959c363625e5ed7712e015b0fdec08ef74a5d643",
+      "results/measurements/tenant_sharing/lyu_live_S2/lyu_live_S2_r0_t1.csv": "30856cb1478b858ee48ccb62efb7e87c2410a2eb4431feb00691e614c969c1c5"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 2,
+    "policy": "rios_live",
+    "queries_per_stream": 8,
+    "rows": 16,
+    "sources": {
+      "results/measurements/tenant_sharing/rios_live_S2/rios_live_S2_r0_t0.csv": "fbf169001cde39d4994aab60d7176f4a1877afc252a8d0f668321c0bbd8d46b0",
+      "results/measurements/tenant_sharing/rios_live_S2/rios_live_S2_r0_t1.csv": "08b8645f8eb7fa139f2367bdbcfccbad185e5546264aa9db7efb0183839810f7"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 2,
+    "policy": "prism_base",
+    "queries_per_stream": 8,
+    "rows": 16,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_base_S2/prism_base_S2_r0_t0.csv": "99bd8b3c6ea2699a5ef8951c2e5cd61527d60fbd277737f81bc5c444b4810fba",
+      "results/measurements/tenant_sharing/prism_base_S2/prism_base_S2_r0_t1.csv": "78edb34137d63dd59607cb158e01ce4567920a5107cd3fbc2a2ce7d45ca50561"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 2,
+    "policy": "ernest_profiled",
+    "queries_per_stream": 8,
+    "rows": 16,
+    "sources": {
+      "results/measurements/tenant_sharing/ernest_profiled_S2/ernest_profiled_S2_r0_t0.csv": "7989c04e34c10c0622b85bcbf2999000a493f24038222f3c2ae280bf77f65a8b",
+      "results/measurements/tenant_sharing/ernest_profiled_S2/ernest_profiled_S2_r0_t1.csv": "c4ba2ee73be72843611c55b546503d091820e3cf479d452362fb933e22296413"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 2,
+    "policy": "cherrypick_profiled",
+    "queries_per_stream": 8,
+    "rows": 16,
+    "sources": {
+      "results/measurements/tenant_sharing/cherrypick_profiled_S2/cherrypick_profiled_S2_r0_t0.csv": "52e44c2e89811cef12c9d8ab5808d599651e3f47a6bb9ead6fd13090cfcc9ab4",
+      "results/measurements/tenant_sharing/cherrypick_profiled_S2/cherrypick_profiled_S2_r0_t1.csv": "d1d38ba2d31bcb8b86005f1f70f634dfd3afc86ff1f2fbdf6c742dfa06871604"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 2,
+    "policy": "prism_random_forest_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 16,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_random_forest_two_stage_cap_S2/prism_random_forest_two_stage_cap_S2_r0_t0.csv": "9ac13ee3305a31700c50f403efbe4f47daeb104c862f6c4381166124e85b4653",
+      "results/measurements/tenant_sharing/prism_random_forest_two_stage_cap_S2/prism_random_forest_two_stage_cap_S2_r0_t1.csv": "c257265d7ac0d4f67365ebc1a67f2292495358b077c537aa2348f55ac76f7c72"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 2,
+    "policy": "prism_random_forest_lm_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 16,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_random_forest_lm_two_stage_cap_S2/prism_random_forest_lm_two_stage_cap_S2_r0_t0.csv": "1db5ffb04b135c2e0881176ef7c1cbf248feae28fbcc67559802d198de7bee9c",
+      "results/measurements/tenant_sharing/prism_random_forest_lm_two_stage_cap_S2/prism_random_forest_lm_two_stage_cap_S2_r0_t1.csv": "f6acf8c93839a762e5d09efea632b0d825da3786937a0ae60114ec8d88b4d39f"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 2,
+    "policy": "prism_xgboost_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 16,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_xgboost_two_stage_cap_S2/prism_xgboost_two_stage_cap_S2_r0_t0.csv": "5506699bc69d2a87709b6afe38fdaf4ba1a5f25a439334ade7674f5a77b01560",
+      "results/measurements/tenant_sharing/prism_xgboost_two_stage_cap_S2/prism_xgboost_two_stage_cap_S2_r0_t1.csv": "39dd56e5dbc90216459786c7234525f4836c93d2381d3f7b7e7428e113937d31"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 2,
+    "policy": "prism_xgboost_lm_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 16,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_xgboost_lm_two_stage_cap_S2/prism_xgboost_lm_two_stage_cap_S2_r0_t0.csv": "ddd2e91c47235b637e40c9ae889292b21d2f906d9d4357b195730acac62da322",
+      "results/measurements/tenant_sharing/prism_xgboost_lm_two_stage_cap_S2/prism_xgboost_lm_two_stage_cap_S2_r0_t1.csv": "b132be7b5f38d0a2590e7ad883c92832dc3e7ecdecc9ca5161ef48c419f0d4d5"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 2,
+    "policy": "prism_lightgbm_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 16,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_lightgbm_two_stage_cap_S2/prism_lightgbm_two_stage_cap_S2_r0_t0.csv": "b4c7a34e8a543115176806fc5c98a74a3dc33bfe0070625b1058dadc057b41ae",
+      "results/measurements/tenant_sharing/prism_lightgbm_two_stage_cap_S2/prism_lightgbm_two_stage_cap_S2_r0_t1.csv": "98964d5cbceebe93cb2363435542f7fa448e540704892263a4711ad43f665f7a"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 2,
+    "policy": "prism_lightgbm_lm_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 16,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_lightgbm_lm_two_stage_cap_S2/prism_lightgbm_lm_two_stage_cap_S2_r0_t0.csv": "7c16b618a67c29abdc518917967def01304caa231f5f7c1465bc170c9d44516d",
+      "results/measurements/tenant_sharing/prism_lightgbm_lm_two_stage_cap_S2/prism_lightgbm_lm_two_stage_cap_S2_r0_t1.csv": "0838b94b4a15dd9970dec904982fd95c0af6ca9c44a92079fecf027222e9ca98"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 2,
+    "policy": "prism_ridge_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 16,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_ridge_two_stage_cap_S2/prism_ridge_two_stage_cap_S2_r0_t0.csv": "591c83ccfddd86f500ad2897df76225efb75e4cbb6e1b2ceb9e92853c3e77aae",
+      "results/measurements/tenant_sharing/prism_ridge_two_stage_cap_S2/prism_ridge_two_stage_cap_S2_r0_t1.csv": "3c85675487a1d22ef66456815c89dc34613026cff23daaaa4c7a8a506140419d"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 2,
+    "policy": "prism_ridge_lm_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 16,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_ridge_lm_two_stage_cap_S2/prism_ridge_lm_two_stage_cap_S2_r0_t0.csv": "be9af660a211b3b61e8671e980b27d99431a12ebf25baea754b447b34b153c46",
+      "results/measurements/tenant_sharing/prism_ridge_lm_two_stage_cap_S2/prism_ridge_lm_two_stage_cap_S2_r0_t1.csv": "f5ddb3cf39d783238989aeaeb4333898ad1e4ed50855b30249a72c090ae9bd44"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 2,
+    "policy": "prism_svr_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 16,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_svr_two_stage_cap_S2/prism_svr_two_stage_cap_S2_r0_t0.csv": "7138c8c6a4e3a793c281e02643dcdf9a9e2fe18c3fa9dcc940cfa0ef7988f0df",
+      "results/measurements/tenant_sharing/prism_svr_two_stage_cap_S2/prism_svr_two_stage_cap_S2_r0_t1.csv": "050684d476974479fbd12669fb34d1e260243a2979c66df6e6b0758986b01545"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 2,
+    "policy": "prism_svr_lm_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 16,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_svr_lm_two_stage_cap_S2/prism_svr_lm_two_stage_cap_S2_r0_t0.csv": "483a77290e97c2f0d82c74e2d991edabf6d528810e4cde21cfbc1a7a4a40c811",
+      "results/measurements/tenant_sharing/prism_svr_lm_two_stage_cap_S2/prism_svr_lm_two_stage_cap_S2_r0_t1.csv": "900a802513c58d3ef321e386ec2636a35dc67bbb75e330cd9b5f4f00f5bdb953"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 2,
+    "policy": "prism_mlp_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 16,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_mlp_two_stage_cap_S2/prism_mlp_two_stage_cap_S2_r0_t0.csv": "682d79d6d471b34327b3eeefd2bc364d724c6d136a9a1c109b770651324bb291",
+      "results/measurements/tenant_sharing/prism_mlp_two_stage_cap_S2/prism_mlp_two_stage_cap_S2_r0_t1.csv": "9ae71d427e654c3b5202885364ee2afaae6e5eb111bc42185bc6f5309692c168"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 2,
+    "policy": "prism_mlp_lm_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 16,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_mlp_lm_two_stage_cap_S2/prism_mlp_lm_two_stage_cap_S2_r0_t0.csv": "c39d1188e3100dd5d59780f254c889348132a3f2867a950a0cc070c9eeafefdd",
+      "results/measurements/tenant_sharing/prism_mlp_lm_two_stage_cap_S2/prism_mlp_lm_two_stage_cap_S2_r0_t1.csv": "8f12debd80d1f7df4181676162e46ff5c1b1c361b9a3f0c248792ed9f2ce1117"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 3,
+    "policy": "static_1",
+    "queries_per_stream": 8,
+    "rows": 24,
+    "sources": {
+      "results/measurements/tenant_sharing/static_1_S3/static_1_S3_r0_t0.csv": "6b815b6f85861ff4688ac560d64a3cf7604e60a0a88220441808744c75c4e923",
+      "results/measurements/tenant_sharing/static_1_S3/static_1_S3_r0_t1.csv": "99ba64035dde79d6e8fb29b568dab02d0331e6ab1b6a2933e1ed47a5d5d9ba92",
+      "results/measurements/tenant_sharing/static_1_S3/static_1_S3_r0_t2.csv": "26772e253460f6a6901d203de546db1492a97ea7767660605e79d99eb9e5b7e6"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 3,
+    "policy": "static_2",
+    "queries_per_stream": 8,
+    "rows": 24,
+    "sources": {
+      "results/measurements/tenant_sharing/static_2_S3/static_2_S3_r0_t0.csv": "330e3b1c2604bfbb011b8ebea094176aef57c25871a7b3fca22745e483aae9ab",
+      "results/measurements/tenant_sharing/static_2_S3/static_2_S3_r0_t1.csv": "2f31efeb5d27fcb8a03a98ab1834a4e064d95f2f3de8ae7ee31fb9e9496bd7d8",
+      "results/measurements/tenant_sharing/static_2_S3/static_2_S3_r0_t2.csv": "7089b1516d2cac91f51d28fe5c2946dbd8395f7b6eaa4e8e5b07a03759553ce4"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 3,
+    "policy": "static_3",
+    "queries_per_stream": 8,
+    "rows": 24,
+    "sources": {
+      "results/measurements/tenant_sharing/static_3_S3/static_3_S3_r0_t0.csv": "5f24124ca23d11b6289371d14716c6a3efd6e2d3925a49fcce8f4e298d11ec8d",
+      "results/measurements/tenant_sharing/static_3_S3/static_3_S3_r0_t1.csv": "796fd9b7fa36a1f39351ca3083ed3ca282cf1388179792e4f21609bd573f5e85",
+      "results/measurements/tenant_sharing/static_3_S3/static_3_S3_r0_t2.csv": "84c6299a9eac1d7ebd33ac7d000ff082b95604db9c2a6c4ec364512dce655fff"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 3,
+    "policy": "static_4",
+    "queries_per_stream": 8,
+    "rows": 24,
+    "sources": {
+      "results/measurements/tenant_sharing/static_4_S3/static_4_S3_r0_t0.csv": "c08d037130430ff76f28b60b2dbac2fd5e49884b1e497422adcf837b88138e67",
+      "results/measurements/tenant_sharing/static_4_S3/static_4_S3_r0_t1.csv": "59b6916eed970823f58b1e9c5f7fd6c0f103d67fc1feddb60dea811318833194",
+      "results/measurements/tenant_sharing/static_4_S3/static_4_S3_r0_t2.csv": "bbd40e7a36be1bbe3e04b3a45aa74167ffab25a249684af11f0a12598130656e"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 3,
+    "policy": "spark_dra",
+    "queries_per_stream": 8,
+    "rows": 24,
+    "sources": {
+      "results/measurements/tenant_sharing/spark_dra_S3/spark_dra_S3_r0_t0.csv": "144f6583dd0e4917f43e53ae936ba693e00bcfcbe48ad92e0fed741d40c40e4f",
+      "results/measurements/tenant_sharing/spark_dra_S3/spark_dra_S3_r0_t1.csv": "87ff58c40dd20b5a1b3549b4882d8d6bfa4bed3fce95629fd48323facb6800f7",
+      "results/measurements/tenant_sharing/spark_dra_S3/spark_dra_S3_r0_t2.csv": "9015edbe9c4a5eb674bd02e0ce3f515acf3d14dbc1b8b112db3ae8067c9d8806"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 3,
+    "policy": "heuristic",
+    "queries_per_stream": 8,
+    "rows": 24,
+    "sources": {
+      "results/measurements/tenant_sharing/heuristic_S3/heuristic_S3_r0_t0.csv": "fb30c8cdf75759901ceea1ec10048bf88b3584a9868b8f6379b740ec36bf9956",
+      "results/measurements/tenant_sharing/heuristic_S3/heuristic_S3_r0_t1.csv": "16fe12a33b10fb2efa980fa557cdd64f46ab04e59f795a23024299cb3eda1238",
+      "results/measurements/tenant_sharing/heuristic_S3/heuristic_S3_r0_t2.csv": "591d47dd3b86a0a05f45c19277f6f2d2a5b08cea58db1bf659038ae55f7d8a9e"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 3,
+    "policy": "lyu_live",
+    "queries_per_stream": 8,
+    "rows": 24,
+    "sources": {
+      "results/measurements/tenant_sharing/lyu_live_S3/lyu_live_S3_r0_t0.csv": "de4cf9b3878dd882f760b559f24b86c96520f48f21f42e209788e119db65788c",
+      "results/measurements/tenant_sharing/lyu_live_S3/lyu_live_S3_r0_t1.csv": "d9cf54ae49c70adfeb474e8e5b7e8c90ee1953b1b5311152be1fcf0a9307ef1c",
+      "results/measurements/tenant_sharing/lyu_live_S3/lyu_live_S3_r0_t2.csv": "2c6c851a70900443bb4772c08324e520568de5634974a74ae183540fc96a328c"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 3,
+    "policy": "rios_live",
+    "queries_per_stream": 8,
+    "rows": 24,
+    "sources": {
+      "results/measurements/tenant_sharing/rios_live_S3/rios_live_S3_r0_t0.csv": "0a07e55b1d373c8113cba0d692037106f1c03ee50b5704c7358f6673fecead9a",
+      "results/measurements/tenant_sharing/rios_live_S3/rios_live_S3_r0_t1.csv": "ae35800acdd3e64921e3ec23cb53e6e927104aed365b76d633bf195ccf0c421e",
+      "results/measurements/tenant_sharing/rios_live_S3/rios_live_S3_r0_t2.csv": "81d0f63f7677d30cbcdfa9fe397338fa6e28a4c09f33a78f2f9f9bdfac46f7c1"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 3,
+    "policy": "prism_base",
+    "queries_per_stream": 8,
+    "rows": 24,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_base_S3/prism_base_S3_r0_t0.csv": "64b6560ffaa1d4f1c1580d716365bf0496dce586f93de7b5a5abb5d40defb68f",
+      "results/measurements/tenant_sharing/prism_base_S3/prism_base_S3_r0_t1.csv": "faba0712ced5d1e28a9b055059cbf6d768c5fa2e3973dee05b16adfe9251a5d3",
+      "results/measurements/tenant_sharing/prism_base_S3/prism_base_S3_r0_t2.csv": "c88260d68ba68818f322653c224a8d51ae5a7bb4817f9c1ad9bfc6c509d5d6ff"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 3,
+    "policy": "ernest_profiled",
+    "queries_per_stream": 8,
+    "rows": 24,
+    "sources": {
+      "results/measurements/tenant_sharing/ernest_profiled_S3/ernest_profiled_S3_r0_t0.csv": "eea4f97c4c0923fc98bac765038fce093fc6773beea500d2f4c7d6ac59f9a4df",
+      "results/measurements/tenant_sharing/ernest_profiled_S3/ernest_profiled_S3_r0_t1.csv": "04bb7b44e2d5000941a1e7b2405818608cb0bf9bfa51fc4df0dba441ca119bf0",
+      "results/measurements/tenant_sharing/ernest_profiled_S3/ernest_profiled_S3_r0_t2.csv": "e1898ac6a27fc3e3decfe87dc2dc6c920074315afc7c8a16e4dfa1b1ebb2a56d"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 3,
+    "policy": "cherrypick_profiled",
+    "queries_per_stream": 8,
+    "rows": 24,
+    "sources": {
+      "results/measurements/tenant_sharing/cherrypick_profiled_S3/cherrypick_profiled_S3_r0_t0.csv": "4761133894d273edae2f255e8972f37507b198b13b434657d9f2d2f0c3ee0957",
+      "results/measurements/tenant_sharing/cherrypick_profiled_S3/cherrypick_profiled_S3_r0_t1.csv": "8ae24d2164d67797ac89d9c49025f804f9ef5fc08b5c0106954ff55a99dc2076",
+      "results/measurements/tenant_sharing/cherrypick_profiled_S3/cherrypick_profiled_S3_r0_t2.csv": "a1eece3d6365d2bcd523f11b8b9d6eacab989e9c1136e24874024ade9fe14306"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 3,
+    "policy": "prism_random_forest_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 24,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_random_forest_two_stage_cap_S3/prism_random_forest_two_stage_cap_S3_r0_t0.csv": "459baf233f0565be1e7d40533c18161fee62206b74bfb00498d7bf04d060f694",
+      "results/measurements/tenant_sharing/prism_random_forest_two_stage_cap_S3/prism_random_forest_two_stage_cap_S3_r0_t1.csv": "d82ee7db813e1f5d25b679165e97a557d9f523b247b05ec730fe865b34102381",
+      "results/measurements/tenant_sharing/prism_random_forest_two_stage_cap_S3/prism_random_forest_two_stage_cap_S3_r0_t2.csv": "4bf752aafafa66c0e4c17f98f38b86fa133be28642d71de8c3f663b16cf80ce5"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 3,
+    "policy": "prism_random_forest_lm_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 24,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_random_forest_lm_two_stage_cap_S3/prism_random_forest_lm_two_stage_cap_S3_r0_t0.csv": "a31f445b6a7207d13b579d82c7b0ef410e46ed79f7bec553524bb3229d2ac47d",
+      "results/measurements/tenant_sharing/prism_random_forest_lm_two_stage_cap_S3/prism_random_forest_lm_two_stage_cap_S3_r0_t1.csv": "697d5b1939bc74e4378325e820a11d6e98628ca1e1c5966a924caff33a850e67",
+      "results/measurements/tenant_sharing/prism_random_forest_lm_two_stage_cap_S3/prism_random_forest_lm_two_stage_cap_S3_r0_t2.csv": "972eac9cb9c858066b8e0fa18fea63160548c28a6226604f84206f1d82e62db9"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 3,
+    "policy": "prism_xgboost_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 24,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_xgboost_two_stage_cap_S3/prism_xgboost_two_stage_cap_S3_r0_t0.csv": "4fe1164d173c219e0d91b13f501862fc3d2989a0112d1f2c0afada87d6d166f3",
+      "results/measurements/tenant_sharing/prism_xgboost_two_stage_cap_S3/prism_xgboost_two_stage_cap_S3_r0_t1.csv": "d5be1069739647db799ffee0232e0e4d5074d3f5f5464cccb384d9688807ca0f",
+      "results/measurements/tenant_sharing/prism_xgboost_two_stage_cap_S3/prism_xgboost_two_stage_cap_S3_r0_t2.csv": "fc94f9be3c527b92d467c9437063c9faef6632deb0c0acdb4e2f4c7371168763"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 3,
+    "policy": "prism_xgboost_lm_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 24,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_xgboost_lm_two_stage_cap_S3/prism_xgboost_lm_two_stage_cap_S3_r0_t0.csv": "94d50340cc50b671138a1a028211e6a30ec73d8cebb4cd64a6403baf9f5b7877",
+      "results/measurements/tenant_sharing/prism_xgboost_lm_two_stage_cap_S3/prism_xgboost_lm_two_stage_cap_S3_r0_t1.csv": "95d6694739d443b603a1fee32ee4ec9fa1b5309500f1915e74bfbeb381ce550b",
+      "results/measurements/tenant_sharing/prism_xgboost_lm_two_stage_cap_S3/prism_xgboost_lm_two_stage_cap_S3_r0_t2.csv": "43244bd27ecd1c4d412721e52261f4529f55d33e54d63a560ca98e519051b45a"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 3,
+    "policy": "prism_lightgbm_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 24,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_lightgbm_two_stage_cap_S3/prism_lightgbm_two_stage_cap_S3_r0_t0.csv": "3d433b91aab8cbd92937a4215700d02cd6c474a86cd2cbdfd8c2ea7b70f8ee47",
+      "results/measurements/tenant_sharing/prism_lightgbm_two_stage_cap_S3/prism_lightgbm_two_stage_cap_S3_r0_t1.csv": "fb10b73cbc9817cc642ac3a07047f21c691fd3bbd0f1a272a8d03188228ebebf",
+      "results/measurements/tenant_sharing/prism_lightgbm_two_stage_cap_S3/prism_lightgbm_two_stage_cap_S3_r0_t2.csv": "5c06fb7e5f52db155c422f4d7e946d5e71714c439ad4d1277013b534087245be"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 3,
+    "policy": "prism_lightgbm_lm_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 24,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_lightgbm_lm_two_stage_cap_S3/prism_lightgbm_lm_two_stage_cap_S3_r0_t0.csv": "5cc99ec4599555117b919fef6e48d5b0b8f8e5f6e8b146eede292cd90b80befa",
+      "results/measurements/tenant_sharing/prism_lightgbm_lm_two_stage_cap_S3/prism_lightgbm_lm_two_stage_cap_S3_r0_t1.csv": "5dda13a3db36fd622ea1d3f8b93b5205fa5543bf0ba0f89a457360772a5b986f",
+      "results/measurements/tenant_sharing/prism_lightgbm_lm_two_stage_cap_S3/prism_lightgbm_lm_two_stage_cap_S3_r0_t2.csv": "040227ff0b378bd96650f3b4872225a218b0b387f5c10a863e1152d586de7500"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 3,
+    "policy": "prism_ridge_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 24,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_ridge_two_stage_cap_S3/prism_ridge_two_stage_cap_S3_r0_t0.csv": "0a9060740b3aa10150f3588f474d5e5ee547b7fb9f7887a22262f780a2236d83",
+      "results/measurements/tenant_sharing/prism_ridge_two_stage_cap_S3/prism_ridge_two_stage_cap_S3_r0_t1.csv": "a94c864b2595007822b23a5dc0999b5a9c13924b74559d780d17b1e2ae880479",
+      "results/measurements/tenant_sharing/prism_ridge_two_stage_cap_S3/prism_ridge_two_stage_cap_S3_r0_t2.csv": "6b1e671b4a3274fdd78e16fc7a6f2e659fc6fca234021b45de4ff27a70b1ec97"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 3,
+    "policy": "prism_ridge_lm_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 24,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_ridge_lm_two_stage_cap_S3/prism_ridge_lm_two_stage_cap_S3_r0_t0.csv": "33921c5470cd504332aa3cee98b84f549f5d672a4ea9b29e4e0fc5fa229ba056",
+      "results/measurements/tenant_sharing/prism_ridge_lm_two_stage_cap_S3/prism_ridge_lm_two_stage_cap_S3_r0_t1.csv": "504b8501ba8654fbde0b3f24d91aa6f8211f4782d7d1137a253b8f34075e44ae",
+      "results/measurements/tenant_sharing/prism_ridge_lm_two_stage_cap_S3/prism_ridge_lm_two_stage_cap_S3_r0_t2.csv": "4b34bee45e47a9deadbaf9d35c09ef19c4b67b71419388a8b29f808e1b14c5da"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 3,
+    "policy": "prism_svr_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 24,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_svr_two_stage_cap_S3/prism_svr_two_stage_cap_S3_r0_t0.csv": "2db0fbc29035c86f6fce47b862332c576b9aaccaf0b7fa0aec4a2fe286793bbc",
+      "results/measurements/tenant_sharing/prism_svr_two_stage_cap_S3/prism_svr_two_stage_cap_S3_r0_t1.csv": "8c33bbfa16d1575a4cccc18fb0454d6d76a8a08044d823ecc753a82574400eb6",
+      "results/measurements/tenant_sharing/prism_svr_two_stage_cap_S3/prism_svr_two_stage_cap_S3_r0_t2.csv": "e2994612f9d35b94262a0cf54f33c84c6ff93f9ee2408163dcf17b15b91ac59c"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 3,
+    "policy": "prism_svr_lm_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 24,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_svr_lm_two_stage_cap_S3/prism_svr_lm_two_stage_cap_S3_r0_t0.csv": "5b2bdb91c685e9e4bfc48ce719e81795bebe8856d271fca3114edd52353289ec",
+      "results/measurements/tenant_sharing/prism_svr_lm_two_stage_cap_S3/prism_svr_lm_two_stage_cap_S3_r0_t1.csv": "c42f25ac87cab375fd543b32cc3dc76b0cf2809bb04459278a8e624a12ad7540",
+      "results/measurements/tenant_sharing/prism_svr_lm_two_stage_cap_S3/prism_svr_lm_two_stage_cap_S3_r0_t2.csv": "402cfad06a70a4b421774f4c806f9c988b549a219ba03b7688ee36fa9b69629e"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 3,
+    "policy": "prism_mlp_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 24,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_mlp_two_stage_cap_S3/prism_mlp_two_stage_cap_S3_r0_t0.csv": "9ffa6c2344852e7480ecf785f71f3f8e28f8520e134613ac06daecbd5f881baa",
+      "results/measurements/tenant_sharing/prism_mlp_two_stage_cap_S3/prism_mlp_two_stage_cap_S3_r0_t1.csv": "e46371c5badb96a9c3a2380c126d3a5b622d9f45747386eb8af50d6e16b32a15",
+      "results/measurements/tenant_sharing/prism_mlp_two_stage_cap_S3/prism_mlp_two_stage_cap_S3_r0_t2.csv": "591553fba769aa656dc330f4d8f8c95b08c497d5b8e43a195f9c84fca19dc8e2"
+    }
+  },
+  {
+    "test_set": "pooled",
+    "streams": 3,
+    "policy": "prism_mlp_lm_two_stage_cap",
+    "queries_per_stream": 8,
+    "rows": 24,
+    "sources": {
+      "results/measurements/tenant_sharing/prism_mlp_lm_two_stage_cap_S3/prism_mlp_lm_two_stage_cap_S3_r0_t0.csv": "9a853594b05ff96011135515b799393f11ab943ae514b2e32e93d607f667941d",
+      "results/measurements/tenant_sharing/prism_mlp_lm_two_stage_cap_S3/prism_mlp_lm_two_stage_cap_S3_r0_t1.csv": "eb2454c8f1f402aa589ea39ff874125e77a6f053253bc87dddb8d85d5b8dfa6b",
+      "results/measurements/tenant_sharing/prism_mlp_lm_two_stage_cap_S3/prism_mlp_lm_two_stage_cap_S3_r0_t2.csv": "9dca84dcf129327d67a97eb434b13ed3c44f0c294ec3fa0d2f5fb9bab67d8de3"
+    }
+  }
+]

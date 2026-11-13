@@ -1,0 +1,56 @@
+{
+  "selected": {
+    "official": [
+      "q6",
+      "q8"
+    ],
+    "variants": [
+      "v09_2",
+      "v19_2"
+    ],
+    "variants2": [
+      "w13_2",
+      "w21_2"
+    ],
+    "newfamilies": [
+      "f008",
+      "f039"
+    ]
+  },
+  "sql_identity": {
+    "q8": {
+      "source": "workload/tpch-queries/q8.sql",
+      "sql_sha256": "9257d2d3c2364a10b01b26d5e0eb2c47334a90ddb3e379d782ae373e48ac121c"
+    },
+    "q6": {
+      "source": "workload/tpch-queries/q6.sql",
+      "sql_sha256": "ec99cab00bbbddf394ea41a9f702d795a8d86e08bfd86f985c9057f3073d303f"
+    },
+    "v19_2": {
+      "source": "workload/tpch-test-qgen-variants/v19_2.sql",
+      "sql_sha256": "3aa56873b901a84437a4ed10fa67750dfde5fd2c591caa3eabc950b8587d7c80"
+    },
+    "v09_2": {
+      "source": "workload/tpch-test-qgen-variants/v09_2.sql",
+      "sql_sha256": "99b3e278382d34e712e3986365964bf1d4b6c599451b6467bc14050f3af2b20e"
+    },
+    "w13_2": {
+      "source": "workload/tpch-test-qgen-variants2/w13_2.sql",
+      "sql_sha256": "d0799b25315661f7b4d80a3caef168e95ec2ec8666f553463bc2b696abf3db72"
+    },
+    "w21_2": {
+      "source": "workload/tpch-test-qgen-variants2/w21_2.sql",
+      "sql_sha256": "8fd28cda5a37989b232a532fce6764077b1518a7601e9ae3044776fb2ba7f98e"
+    },
+    "f008": {
+      "source": "workload/tpch-test-newfamilies/f008.sql",
+      "sql_sha256": "e90f573d81e07fe53e9d6c72ab1a66393743999bda47c1c58d5f798119260b5a"
+    },
+    "f039": {
+      "source": "workload/tpch-test-newfamilies/f039.sql",
+      "sql_sha256": "8f2dcab43f1795d172f25503c933a9947d11e469c4f5eeb8fcd3568c2bb37dc3"
+    }
+  },
+  "queries_per_cohort": 2,
+  "selection": "seeded SQL-content hash order, fixed before checking performance/outcomes"
+}

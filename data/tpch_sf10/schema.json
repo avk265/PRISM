@@ -1,0 +1,10 @@
+{
+  "region": "r_regionkey long,r_name string,r_comment string",
+  "nation": "n_nationkey long,n_name string,n_regionkey long,n_comment string",
+  "supplier": "s_suppkey long,s_name string,s_address string,s_nationkey long,s_phone string,s_acctbal decimal(15,2),s_comment string",
+  "customer": "c_custkey long,c_name string,c_address string,c_nationkey long,c_phone string,c_acctbal decimal(15,2),c_mktsegment string,c_comment string",
+  "part": "p_partkey long,p_name string,p_mfgr string,p_brand string,p_type string,p_size int,p_container string,p_retailprice decimal(15,2),p_comment string",
+  "partsupp": "ps_partkey long,ps_suppkey long,ps_availqty int,ps_supplycost decimal(15,2),ps_comment string",
+  "orders": "o_orderkey long,o_custkey long,o_orderstatus string,o_totalprice decimal(15,2),o_orderdate date,o_orderpriority string,o_clerk string,o_shippriority int,o_comment string",
+  "lineitem": "l_orderkey long,l_partkey long,l_suppkey long,l_linenumber int,l_quantity decimal(15,2),l_extendedprice decimal(15,2),l_discount decimal(15,2),l_tax decimal(15,2),l_returnflag string,l_linestatus string,l_shipdate date,l_commitdate date,l_receiptdate date,l_shipinstruct string,l_shipmode string,l_comment string"
+}

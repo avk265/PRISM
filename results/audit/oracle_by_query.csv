@@ -1,0 +1,9 @@
+study,load,strategy,query,test_set,latency_s,core_s,mem_gb_s,sla,latency_ratio,core_ratio,J,source_csv,profile_source
+idle_coverage,0,fixed_1e,q6,official,2.0840108394622803,4.1680216789245605,3.1260162591934204,True,0.9627713398861303,0.24069283497153257,1.276548539124003,results/measurements/idle_coverage_official/runs.csv,
+idle_coverage,0,fixed_2e,q8,official,4.6283769607543945,18.513507843017575,13.885130882263184,True,0.9852731436656064,0.49263657183280307,1.7173088666791863,results/measurements/idle_coverage_official/runs.csv,
+idle_coverage,0,fixed_4e,v19_2,variants,2.588054656982422,20.70443725585937,15.528327941894531,True,1.0,1.0,3.0,results/measurements/fixed_counts/variants/runs.csv,
+idle_coverage,0,fixed_3e,w13_2,variants2,7.522384643554687,45.134307861328125,33.850730895996094,True,1.1460498359574844,0.8595373769681133,2.6774871708626686,results/measurements/fixed_counts/variants2/runs.csv,
+idle_coverage,0,fixed_2e,v09_2,variants,12.50655961036682,50.026238441467285,37.519678831100464,True,1.0104175866315321,0.5052087933157663,1.6593988028027258,results/measurements/fixed_counts/variants/runs.csv,
+idle_coverage,0,fixed_3e,f039,newfamilies,9.766802549362184,58.600815296173096,43.95061147212982,True,1.0244059037076523,0.7683044277807392,2.1511032415487685,results/measurements/fixed_counts/newfamilies/runs.csv,
+idle_coverage,0,fixed_4e,w21_2,variants2,23.78752827644348,190.30022621154785,142.7251696586609,True,1.0,1.0,3.0,results/measurements/fixed_counts/variants2/runs.csv,
+idle_coverage,0,fixed_3e,f008,newfamilies,47.63481760025024,285.80890560150146,214.3566792011261,True,1.1268718478509598,0.8451538858882199,2.615128715054373,results/measurements/fixed_counts/newfamilies/runs.csv,

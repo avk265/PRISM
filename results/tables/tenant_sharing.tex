@@ -1,0 +1,37 @@
+\caption{Concurrent execution of eight queries per tenant: 23 retained policies and 69 measured mixes. $\bar\sigma$: mean response / same-policy dedicated execution latency; $T$: makespan (s); $R$: allocated core-hours. Response includes allocation waiting; $T$ excludes startup and prior profiling. PRISM enables both stages with a free-slot cap. Bold: panel-wise column minima, with displayed ties retained.}\label{tab:concurrency}\centering\scriptsize
+\setlength{\tabcolsep}{2pt}\renewcommand{\arraystretch}{1.02}
+\textbf{(a) Baselines and count-only control}\par\smallskip
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrrrrrrr@{}}
+\toprule
+ & \multicolumn{3}{c}{\mbox{One tenant}} & \multicolumn{3}{c}{\mbox{Two tenants}} & \multicolumn{3}{c}{\mbox{Three tenants}}\\
+\mbox{Policy} & \mbox{$\bar\sigma$} & \mbox{$T$} & \mbox{$R$} & \mbox{$\bar\sigma$} & \mbox{$T$} & \mbox{$R$} & \mbox{$\bar\sigma$} & \mbox{$T$} & \mbox{$R$}\\\midrule
+Static-1 & 1.16 & 287.0 & \textbf{0.152} & \textbf{1.47} & 376.3 & \textbf{0.401} & \textbf{1.95} & 491.2 & 0.792\\
+Static-2 & 1.22 & 187.6 & 0.192 & 1.97 & 349.2 & 0.731 & 3.62 & 538.4 & 1.047\\
+Static-3 & 1.24 & 181.0 & 0.275 & 2.83 & 382.3 & 0.679 & 4.74 & 576.7 & 0.957\\
+Static-4 & 1.24 & 174.9 & 0.353 & 3.94 & 463.3 & 0.723 & 4.63 & 603.8 & 0.992\\
+Spark DRA & \textbf{1.00} & 167.9 & 0.359 & 1.90 & 336.8 & 0.727 & 2.61 & 539.0 & 1.169\\
+Input-size rule & 1.31 & 184.9 & 0.357 & 3.72 & 440.7 & 0.703 & 4.68 & 579.7 & 0.963\\
+Lyu rule & 1.25 & 181.8 & 0.368 & 3.81 & 422.5 & 0.643 & 4.61 & 571.6 & 0.967\\
+RIOS rule & 1.25 & 168.9 & 0.339 & 3.91 & 452.9 & 0.715 & 4.71 & 543.6 & 0.901\\
+Count-only control & 1.25 & \textbf{151.2} & 0.226 & 2.08 & \textbf{330.1} & 0.413 & 2.66 & \textbf{368.3} & \textbf{0.588}\\
+Ernest & 1.42 & 192.8 & 0.220 & 2.40 & 368.1 & 0.678 & 3.78 & 501.2 & 0.893\\
+CherryPick & 1.38 & 214.8 & 0.193 & 2.03 & 353.1 & 0.668 & 2.67 & 499.5 & 0.957\\
+\bottomrule\end{tabular*}\par\smallskip
+\textbf{(b) PRISM: two-stage, tenant sharing}\par\smallskip
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrrrrrrr@{}}
+\toprule
+ & \multicolumn{3}{c}{\mbox{One tenant}} & \multicolumn{3}{c}{\mbox{Two tenants}} & \multicolumn{3}{c}{\mbox{Three tenants}}\\
+\mbox{Policy} & \mbox{$\bar\sigma$} & \mbox{$T$} & \mbox{$R$} & \mbox{$\bar\sigma$} & \mbox{$T$} & \mbox{$R$} & \mbox{$\bar\sigma$} & \mbox{$T$} & \mbox{$R$}\\\midrule
+PRISM-C-RF & 1.37 & 202.8 & 0.399 & 2.26 & \textbf{377.8} & 0.724 & 2.66 & 521.8 & 1.037\\
+PRISM-L-RF & 1.48 & 207.1 & 0.356 & 2.05 & 411.7 & 0.733 & 2.56 & 502.5 & 0.968\\
+PRISM-C-XGB & 1.44 & 206.9 & 0.375 & 2.04 & 401.9 & 0.713 & 2.67 & 529.8 & 1.014\\
+PRISM-L-XGB & 1.33 & \textbf{183.1} & 0.355 & 2.26 & 402.7 & 0.704 & 2.80 & 528.1 & 1.036\\
+PRISM-C-LGBM & 1.43 & 207.7 & 0.379 & 2.10 & 382.6 & 0.766 & 2.69 & 523.0 & 1.044\\
+PRISM-L-LGBM & 1.66 & 197.0 & 0.366 & 2.19 & 386.5 & 0.702 & 3.10 & 544.1 & 1.069\\
+PRISM-C-Ridge & 1.63 & 206.0 & 0.385 & 2.45 & 403.7 & 0.698 & 2.81 & \textbf{488.5} & \textbf{0.922}\\
+PRISM-L-Ridge & \textbf{1.25} & 193.7 & 0.394 & 2.18 & 394.5 & 0.732 & 2.63 & 520.0 & 1.020\\
+PRISM-C-SVR & 1.57 & 196.1 & \textbf{0.340} & 2.11 & 392.3 & \textbf{0.678} & 3.07 & 541.2 & 1.002\\
+PRISM-L-SVR & 1.60 & 207.7 & 0.391 & 2.34 & 383.7 & 0.783 & 2.71 & 562.5 & 1.104\\
+PRISM-C-MLP & 1.62 & 196.0 & 0.363 & 2.26 & 415.9 & 0.737 & 2.85 & 556.9 & 1.088\\
+PRISM-L-MLP & 1.53 & 214.9 & 0.391 & \textbf{1.96} & 396.9 & 0.737 & \textbf{2.45} & 553.2 & 1.115\\
+\bottomrule\end{tabular*}

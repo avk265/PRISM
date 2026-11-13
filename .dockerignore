@@ -1,0 +1,8 @@
+.git
+.venv
+.release_assets
+.scratch
+runs
+data/tpch-10gb-parquet
+__pycache__
+*.pyc

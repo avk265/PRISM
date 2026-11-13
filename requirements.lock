@@ -1,0 +1,13 @@
+# Captured runtime; estimator pickle version is scikit-learn 1.9.0.
+pyspark==3.5.1
+numpy==2.5.2
+pandas==3.0.5
+scikit-learn==1.9.0
+scipy==1.18.1
+joblib==1.6.0
+xgboost==3.4.1
+lightgbm==4.7.0
+pydantic==2.13.5
+psutil==7.2.2
+matplotlib==3.11.1
+requests==2.34.2
