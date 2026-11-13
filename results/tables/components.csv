@@ -1,0 +1,5 @@
+component,sla_change_pp
+Training expansion,+0.7
+Safety margin enabled,+8.7
+Runtime correction enabled,-1.8
+Idle capacity cap enabled,-11.3

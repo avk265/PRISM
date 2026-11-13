@@ -17,7 +17,6 @@ This is an artifact of the supplied 12-page paper, not a new implementation clai
 | AutoExecutor head-to-head | Not measured | Discussed prior work only |
 | Multiple nodes, other data scales, TPC-DS | Outside this paper | Not bundled or claimed |
 | Newer corrected 300-query campaign | Outside this paper | Excluded from this repository |
-| Exact LaTeX source of supplied PDF | Not supplied | Canonical PDF and numerical evidence retained; no replacement source invented |
 
 The retained code, models, raw rows and supporting evidence are checksum-indexed. `tools/verify_artifact.py` checks the printed numbers, experiment scopes and provenance without running Spark. A fresh re-measurement need not reproduce identical timings or rankings.
 

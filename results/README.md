@@ -13,7 +13,7 @@ This is the single location for the paper's recorded experimental evidence. Supp
 | Weight sensitivity | 189 reweightings of recorded live outcomes | `audit/live_weight_sensitivity.csv` |
 | Training records | Initial 360 and additional 120 training queries | `measurements/training/` |
 
-`summary.csv` and `tenant_summary.csv` provide compact entry points. `tables/` contains the numerical table sources. `audit/` contains derived records and source references used by the verification scripts. `measurements/` contains supporting executions, decisions and baseline probe records.
+`summary.csv` and `tenant_summary.csv` provide compact entry points. `tables/` contains plain CSV exports of the reported numerical results. `audit/` contains derived records and source references used by the verification scripts. `measurements/` contains supporting executions, decisions and baseline probe records.
 
 The checkpoint directories `prism/model/initial_training/` and `expanded_training/` represent the two training sizes required by the paper's component comparison. They are substantive experimental conditions.
 

@@ -4,7 +4,7 @@
 
 `python tools/verify_artifact.py` uses only the standard library. It verifies imported hashes, the frozen C-MLP selection, all experiment scopes, the 499 numeric table cells and the raw source links. It does not need Parquet data, Java or Spark. `pdftotext` allows the supplied PDF to be re-extracted rather than using the bundled extraction.
 
-`tools/plot_diagnostics.py` regenerates the two diagnostics with NumPy and Matplotlib. The snapshot contains numerical tables, plotting data and verifiers; obsolete manuscript layout files are omitted. The supplied 12-page PDF is the canonical manuscript.
+Reported table values are stored as plain CSVs in `results/tables/`. The verification scripts check these values against the underlying measurements and supplied PDF. The diagnostic SVGs and their numerical inputs remain in `results/`.
 
 ## 2. Install the captured runtime
 

@@ -1,4 +1,5 @@
 """Compare all 499 printed numeric cells in the supplied PDF with audited tables."""
+import csv
 import json
 from pathlib import Path
 import re
@@ -6,7 +7,7 @@ import shutil
 import subprocess
 
 ROOT=Path(__file__).resolve().parents[1]
-TABLES=[('official_idle.tex',3),('live_idle.tex',4),('cpu_pressure.tex',6),('tenant_sharing.tex',9),('components.tex',1)]
+TABLES=[('official_idle.csv',3),('live_idle.csv',4),('cpu_pressure.csv',6),('tenant_sharing.csv',9),('components.csv',1)]
 METHODS=r'(?:Static-[1-4]|Spark DRA|Input-size rule|Lyu rule|RIOS rule|Ernest|CherryPick|Count-only control|Oracle \(hindsight\)|PRISM-[CL]-(?:LGBM|Ridge|XGB|MLP|SVR|RF)|Training expansion|Safety margin enabled|Runtime correction enabled|Idle capacity cap enabled)'
 NUMBER=r'[+\-]?\d+(?:\.\d+)?'
 
@@ -22,13 +23,12 @@ def verify():
             if name in actual:raise AssertionError(f'Duplicate PDF row: Table {number} {name}')
             actual[name]=values
         expected={}
-        for line in (ROOT/'results/tables'/filename).read_text().splitlines():
-            line=line.strip()
-            if ' & ' not in line or not line.endswith(r'\\'):continue
-            fields=line[:-2].split(' & ')
-            try:values=[float(re.sub(r'\\textbf\{([^}]+)\}',r'\1',v).strip()) for v in fields[1:]]
-            except ValueError:continue
-            if len(values)==width:expected[fields[0].strip()]=values
+        with (ROOT/'results/tables'/filename).open(newline='') as stream:
+            for row in csv.DictReader(stream):
+                label,*fields=row
+                values=[float(row[field]) for field in fields]
+                assert len(values)==width,(filename,row[label])
+                expected[row[label]]=values
         assert set(actual)==set(expected),(number,'PDF/source row mismatch',sorted(set(actual)^set(expected)))
         for name,values in expected.items():
             assert all(abs(a-b)<1e-9 for a,b in zip(actual[name],values)),(number,name,actual[name],values)
