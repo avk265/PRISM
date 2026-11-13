@@ -1,4 +1,4 @@
-"""Print or execute only the studies represented in the supplied PRISM paper."""
+"""Plan or run Spark SQL experiments using the recorded settings."""
 import argparse
 import json
 import os
@@ -65,7 +65,7 @@ def jobs(config,study,out,data):
 def main():
     ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--study',required=True,choices=['official','live','profiles','concurrency','fixed-grid','growth','training-sweeps','train','components','all'])
     ap.add_argument('--out',type=Path,default=ROOT/'runs/fresh');ap.add_argument('--data-dir',type=Path,default=ROOT/'data/tpch-10gb-parquet');ap.add_argument('--execute',action='store_true');a=ap.parse_args()
-    config=json.loads((ROOT/'configs/paper.json').read_text());plans=list(jobs(config,a.study,a.out.resolve(),a.data_dir.resolve()))
+    config=json.loads((ROOT/'configs/experiments.json').read_text());plans=list(jobs(config,a.study,a.out.resolve(),a.data_dir.resolve()))
     if not a.execute:
         print(json.dumps(dict(study=a.study,execute=False,jobs=[dict(name=n,command=c) for n,c in plans]),indent=2));return
     if os.name=='nt':raise SystemExit('Use Docker for the captured Unix standalone worker launcher on Windows.')

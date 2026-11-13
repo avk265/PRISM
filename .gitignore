@@ -22,6 +22,8 @@ results/build/
 results/audit/sla_scope_verification.json
 
 # Manuscript build sources and intermediates
+/paper/
+*.pdf
 *.tex
 *.bib
 *.sty
@@ -34,3 +36,5 @@ results/audit/sla_scope_verification.json
 *.fdb_latexmk
 *.synctex.gz
 *.log
+*.tikz
+*.pgf

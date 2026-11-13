@@ -1,8 +1,8 @@
-# Baselines represented in the supplied paper
+# Evaluated baselines
 
-The table below identifies the implementations evaluated in the paper and their limits.
+The table below identifies the evaluated implementations and their limits.
 
-| Method | Artifact implementation | Accounting / limits |
+| Method | Implementation | Accounting / limits |
 |---|---|---|
 | Static 1–4 | Real fixed standalone executor pools | Same 2 cores / 1536 MB executor shape |
 | Spark DRA | Actual Spark dynamic allocation with shuffle tracking | Not an emulated executor-count lookup |
@@ -14,6 +14,5 @@ The table below identifies the implementations evaluated in the paper and their 
 | Count-only control | No correction/margin, 30 shuffle partitions, three idle executors | Historical dispatcher configuration preserved |
 | Oracle | Hindsight choice over measured allocations | Privileged offline bound, not deployable |
 | PRISM C/L × six learners | Frozen count/latency bundles with tuned safety margins and Stage 2 | Calibration limitations retained |
-| AutoExecutor | Related work only | Not evaluated; no superiority claim |
 
-The implementation files are `prism/evaluation/honest_benchmark.py`, `scripts/common_campaign/live_extensions.py`, `tenant_policies.py`, and `prism/model/train_from_sweep.py`. The experiment launcher selects the conditions reported in the paper.
+The implementation files are `prism/evaluation/honest_benchmark.py`, `scripts/common_campaign/live_extensions.py`, `tenant_policies.py`, and `prism/model/train_from_sweep.py`. The experiment launcher uses the recorded settings in `configs/experiments.json`.

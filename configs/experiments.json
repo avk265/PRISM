@@ -1,6 +1,5 @@
 {
   "schema": 1,
-  "canonical_paper": "paper/prism_spark_sql.pdf",
   "benchmark": "tpch",
   "scale_factor": 10,
   "workers": 4,

@@ -1,8 +1,8 @@
-# Scope and evidence audit
+# Methodology and limitations
 
-This is an artifact of the supplied 12-page paper, not a new implementation claim.
+The recorded evaluation uses TPC-H SF10 and fixed executor shapes of two cores and 1536 MB. The configuration and limitations below define how to interpret the results.
 
-| Paper requirement | Status | Evidence / boundary |
+| Component or experiment | Status | Evidence / boundary |
 |---|---|---|
 | Plan-based count prediction, six learners, C/L formulations | Implemented with frozen checkpoints | `prism/model/expanded_training/`, original training/selection code |
 | Asymmetric safety margins | Implemented; stored train-only choices | `manifest.json`, `tuning.csv`, `selected_idle.json` |
@@ -14,12 +14,11 @@ This is an artifact of the supplied 12-page paper, not a new implementation clai
 | Actual tenant sharing | Completed, verified | 69 complete mixes, eight queries per tenant; separate slowdown/makespan/reservation |
 | Component ablations | Completed, measured-trajectory scoring | Full 150-ID inventory, fixed and growth runs; feedback/fallback disabled |
 | Weight sensitivity | Completed revaluation | 189 reweightings of existing data; not 189 new physical experiments |
-| AutoExecutor head-to-head | Not measured | Discussed prior work only |
-| Multiple nodes, other data scales, TPC-DS | Outside this paper | Not bundled or claimed |
-| Newer corrected 300-query campaign | Outside this paper | Excluded from this repository |
 
-The retained code, models, raw rows and supporting evidence are checksum-indexed. `tools/verify_artifact.py` checks the printed numbers, experiment scopes and provenance without running Spark. A fresh re-measurement need not reproduce identical timings or rankings.
+The retained code, models, raw rows and supporting evidence are checksum-indexed. `tools/verify_artifact.py` checks reported numerical values, experiment scopes and provenance without running Spark. A fresh re-measurement need not reproduce identical timings or rankings.
 
 The original code groups CV by query ID. It must not be described as family-held-out CV. The test inventory has 150 IDs and includes normalized SQL aliases; artifact documentation distinguishes identities from unique texts. The eight-query panel was selected by a fixed SQL-content hash, not by selecting the fastest successful cases.
 
-The paper reports post-hoc full-compliance predictors separately from the training-selected C-MLP. Most live conditions have only one timed delivery per query. Query-mean 100% is not per-execution 100%, and neither establishes perfect future reliability. Latency variation between identically allocated methods is a documented limitation. Reserved core-hours are not actual energy or monetary cost.
+The results report post-hoc full-compliance predictors separately from the training-selected C-MLP. Most live conditions have only one timed delivery per query. Query-mean 100% is not per-execution 100%, and neither establishes perfect future reliability. Latency variation between identically allocated methods is a documented limitation. Reserved core-hours are not actual energy or monetary cost.
+
+The measurements come from one shared host and TPC-H SF10. Generalization to multiple hosts, other scales or other workloads requires new experiments.

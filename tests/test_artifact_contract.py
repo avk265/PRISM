@@ -9,7 +9,7 @@ spec=importlib.util.spec_from_file_location('run_experiments',ROOT/'tools/run_ex
 
 class ArtifactContract(unittest.TestCase):
     @classmethod
-    def setUpClass(cls):cls.config=json.loads((ROOT/'configs/paper.json').read_text())
+    def setUpClass(cls):cls.config=json.loads((ROOT/'configs/experiments.json').read_text())
     def plan(self,study):return list(launcher.jobs(self.config,study,ROOT/'runs/test-plan',ROOT/'data/tpch-10gb-parquet'))
     def test_official_repetition_and_method_count(self):
         jobs=self.plan('official');self.assertEqual(len(jobs),1);args=jobs[0][1]

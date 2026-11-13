@@ -119,13 +119,13 @@ for r in events:
  for f in ['stage2_fired','stage2_applied']:assert x.get(f,'').lower()==r[f].lower()
  counts[r['strategy']][0]+=1;counts[r['strategy']][1]+=r['stage2_fired']=='True';counts[r['strategy']][2]+=r['stage2_applied']=='True'
 assert len(counts)==12 and all(v[0]==66 for v in counts.values())
-for r in read(A/'stage2_plot_values.csv'):
+for r in read(A/'checkpoint_summary.csv'):
  n,f,g=counts[r['strategy']]
  for key,v in [('observations',n),('fired_pct',100*f/n),('requested_pct',100*g/n)]:equal(r[key],v,'activation plot')
-dec=read(A/'decision_overhead.csv');points=read(A/'decision_overhead_plot_values.csv');assert len(dec)==len(points)==264 and len({(x['strategy'],x['query']) for x in dec})==264
+dec=read(A/'decision_overhead.csv');points=read(A/'decision_overhead_distribution.csv');assert len(dec)==len(points)==264 and len({(x['strategy'],x['query']) for x in dec})==264
 for r in dec:
  x=raw(r);assert x['strategy']==r['strategy'] and x['query']==r['query'];equal(r['decision_overhead_ms'],x['decision_overhead_ms'],'overhead raw')
 for mode in ['C','L']:
  vals=sorted(float(x['decision_overhead_ms']) for x in dec if ('_lm_' in x['strategy'])==(mode=='L'));g=[x for x in points if x['mode']==mode];assert len(vals)==len(g)==132
  for i,(v,r) in enumerate(zip(vals,g),1):equal(v,r['overhead_ms'],'overhead plot x');equal(i/132,r['ecdf'],'overhead plot y')
-print(json.dumps({'passed':True,'checks':checks,'published_numeric_cells':cells,'official_queries':22,'official_repetitions':3,'official_policies':18,'cross_condition_queries':8,'cross_condition_policies':23,'tenant_mixes':69,'activation_observations':792,'initial_decisions':264},indent=2))
+print(json.dumps({'passed':True,'checks':checks,'reported_numeric_values':cells,'official_queries':22,'official_repetitions':3,'official_policies':18,'cross_condition_queries':8,'cross_condition_policies':23,'tenant_mixes':69,'activation_observations':792,'initial_decisions':264},indent=2))

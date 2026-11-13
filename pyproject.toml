@@ -3,13 +3,12 @@ requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "prism-spark-paper"
+name = "prism-spark-sql"
 version = "1.0.0"
-description = "Reproducibility artifact for PRISM two-stage Spark SQL executor allocation"
+description = "Two-stage predictive resource allocation and evaluation for Spark SQL"
 readme = "README.md"
 requires-python = ">=3.14"
 license = "MIT"
-authors = [{name = "PRISM authors"}]
 
 [tool.setuptools.packages.find]
 include = ["prism*"]

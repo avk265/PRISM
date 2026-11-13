@@ -9,7 +9,7 @@ executor count n; the tenant releases surplus executors at once, requests the re
 seconds for them (at least one executor is always awaited), then runs with what it holds. The response time of a
 query is waiting time + execution time, i.e. what a tenant of a shared cluster experiences.
 
-Policies and query populations are selected explicitly from configs/paper.json.
+Policies and query populations are selected explicitly from configs/experiments.json.
 """
 from __future__ import annotations
 
@@ -35,7 +35,7 @@ import prism.evaluation.honest_benchmark as hb
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from live_extensions import SafeCluster, ObservedMonitor
 from tenant_policies import TenantPolicies
-CONCURRENT_POLICIES = tuple(json.loads((PROJECT_ROOT/'configs/paper.json').read_text())['concurrent_policies'])
+CONCURRENT_POLICIES = tuple(json.loads((PROJECT_ROOT/'configs/experiments.json').read_text())['concurrent_policies'])
 hb.StandaloneCluster = SafeCluster
 hb.Stage2Monitor = ObservedMonitor
 from prism.evaluation.multi_classifier_benchmark import sanitize_spark_sql

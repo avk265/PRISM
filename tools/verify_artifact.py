@@ -1,11 +1,10 @@
-"""Verify the published artifact without Spark, fitting models or downloading data."""
+"""Verify recorded results without Spark, fitting models or downloading data."""
 import ast
 import hashlib
 import json
 from pathlib import Path
 import subprocess
 import sys
-from verify_pdf_tables import verify as verify_pdf
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -38,7 +37,6 @@ def main():
         result = subprocess.run([sys.executable, str(ROOT / 'tools' / script)],
                                 capture_output=True, text=True, check=True)
         reports[script] = json.loads(result.stdout)
-    reports['supplied_pdf'] = verify_pdf()
     print(json.dumps(dict(passed=True, files_verified=verified,
                          main_model_bundles=24, reports=reports), indent=2))
 
